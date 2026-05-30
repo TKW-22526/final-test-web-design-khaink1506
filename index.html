@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kandy shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!--HEADER PART-->
+    <header>
+        <nav class="navbar flex between wrapper">
+            <a href="#" class="logo">Kandy.</a>
+
+            <!--DESKTOP MENU-->
+            <ul class="navlist flex gap-3">
+                <li>
+                    <a href="gioi-thieu.html">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="san-pham.html">Sản phẩm</a>
+                </li>
+                <li>
+                    <a href="chi-tiet.html">Chi tiết</a>
+                </li>
+                <li>
+                    <a href="ve-kandy.html">Về Kandy</a>
+                </li>
+                <li>
+                    <a href="lien-he.html">Liên hệ</a>
+                </li>
+            </ul>
+            <div class="desktop-action flex gap-2">
+                <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-value">0</span>
+                </a>
+
+                <a href="#" class="btn">
+                    ĐĂNG NHẬP
+                    &nbsp;
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+                <a href="#" class="humberger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <!--MOBILE MENU-->
+            <ul class="mobile-menu">
+                <li>
+                    <a href="gioi-thieu.html">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="san-pham.html">Sản phẩm</a>
+                </li>
+                <li>
+                    <a href="chi-tiet.html">Chi tiết</a>
+                </li>
+                <li>
+                    <a href="ve-kandy.html">Về Kandy</a>
+                </li>
+                <li>
+                    <a href="lien-he.html">Liên hệ</a>
+                </li>
+                <li>
+                    <a href="#" class="btn">
+                        ĐĂNG NHẬP
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--SECTION PART-->
+    <main>
+        <section>
+            <div class="hero-section flex wrapper gap-4">
+                <div class="content">
+                    <h1>
+                        Ăn gì hôm nay
+                        <span>Mời lựa chọn</span>
+                    </h1>
+                    <p class="paragraph">
+                        Thực đơn Kandy đa dạng và phong phú <br>có rất nhiều sự lựa chọn cho bạn, gia đình và bạn bè
+                    </p>
+                    <div class="flex gap-2">
+                        <a href="#" class="btn">ĐẶT HÀNG</a>
+
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook-messenger"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./assets/thesis/background1.jpg" alt="background">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper p-top">
+                <div class="text-center">
+                    <h2 class="margin-bottom">Thực đơn</h2>
+                </div>
+                <div class="card-list flex mt-4 gap-2">
+                    <div class="col-3">
+                        <div class="cart-item item-1 flex center column">
+                            <div class="cart-content">
+                                <h2>Hamburger</h2>
+                                <a href="#" class="btn">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cart-item item-2 flex center column">
+                            <div class="cart-content text-center">
+                                <h2>Fried & Roasted</h2>
+                                <a href="#" class="btn">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cart-item item-3 flex center column">
+                            <div class="cart-content text-center">
+                                <h2>Snack</h2>
+                                <a href="#" class="btn">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="cart-item item-4 flex center column">
+                            <div class="cart-content text-center">
+                                <h2>Drink</h2>
+                                <a href="#" class="btn">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section>
+            <div class="wrapper p-top">
+                <div class="text-center margin-bottom">
+                    <!-- <h5>Thực đơn</h5> -->
+                    <h2>Thực đơn nổi bật</h2>
+                </div>
+                <div class="card-list text-center flex mt-4 gap-2">
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="./assets/thesis/burger1.png" alt="burger">
+                        </div>
+                        <h4>Burger Ga Yo</h4>
+                        <h4 class="price">30.000đ</h4>
+                        <a href="#" class="btn">ĐẶT HÀNG</a>
+                    </div>
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="./assets/thesis/burger1.png" alt="burger">
+                        </div>
+                        <h4>Burger Ga Yo</h4>
+                        <h4 class="price">30.000đ</h4>
+                        <a href="#" class="btn">ĐẶT HÀNG</a>
+                    </div>
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="./assets/thesis/burger1.png" alt="burger">
+                        </div>
+                        <h4>Burger Ga Yo</h4>
+                        <h4 class="price">30.000đ</h4>
+                        <a href="#" class="btn">ĐẶT HÀNG</a>
+                    </div>
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="./assets/thesis/burger1.png" alt="burger">
+                        </div>
+                        <h4>Burger Ga Yo</h4>
+                        <h4 class="price">30.000đ</h4>
+                        <a href="#" class="btn">ĐẶT HÀNG</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--FOOTER PART-->
+    <footer>
+
+    </footer>
+</body>
+
+</html>

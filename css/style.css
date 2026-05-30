@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+:root{
+    --lead: #212121;
+    --gold-finger: #F2BD12;
+    --eye-ball: #FFFDF7;
+    --hint-yellow: #FCF1CC;
+    --pure-white: #FFF;
+}
+
+body{
+    background: var(--eye-ball);
+}
+
+/*BASIC STYLES*/
+a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--lead);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li{
+    list-style: none;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.gap-2{
+    gap: 2rem;
+}
+
+.gap-3{
+    gap: 3rem;
+}
+
+.wrapper{
+    max-width: 1400px;
+    margin: auto;
+    padding-inline: 1.5rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+
+}
+
+.p-top{
+    padding-top: 10rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*SECTION 1 */
+.cart-item.item-1{
+    background: url('../assets/thesis/burger.jpg') 0% 0% / cover;
+}
+
+
+.col-3 {
+    flex: 1;
+    min-width: 250px; /* Đảm bảo không bị quá dẹt khi thu nhỏ màn hình */
+    max-width: 320px; /* Giới hạn độ rộng tối đa để 4 ô xếp hàng đẹp mắt */
+}
+
+
+.cart-item {
+    position: relative;
+    height: 300px; /* Khóa chiều cao cố định cho card cân đối giống mẫu */
+    border-radius: 2rem; /* Đồng bộ độ bo góc 2rem giống .order-card của bạn */
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hiệu ứng nhấc nhẹ card lên khi di chuột vào */
+.cart-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Sửa lại thuộc tính ảnh nền: Chèn thêm lớp phủ linear-gradient làm tối ảnh 
+   để chữ trắng Hamburger hiển thị rõ ràng, không bị chói mắt */
+.cart-item.item-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6)), 
+                url('../assets/thesis/burger.jpg') no-repeat center center / cover;
+}
+
+.cart-item.item-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6)), 
+                url('../assets/thesis/Fried&Roasted.jpg') no-repeat center center / cover;
+}
+
+.cart-item.item-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6)), 
+                url('../assets/thesis/salad.jpg') no-repeat center center / cover;
+}
+
+.cart-item.item-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6)), 
+                url('../assets/thesis/pepsi.jpg') no-repeat center center / cover;
+}
+
+
+/* Xử lý vùng chứa chữ và nút căn đều vào chính giữa ô */
+.cart-content {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center;    /* Căn giữa theo chiều ngang */
+}
+
+/* Định dạng lại chữ tiêu đề trong ô thực đơn */
+.cart-content h2 {
+    color: var(--pure-white) !important; /* Ép chữ chuyển sang màu trắng */
+    font-size: 2.2rem; /* Hạ kích thước từ 3.7rem xuống 2.2rem để không bị tràn viền */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6); /* Đổ bóng cho chữ nổi lên trên ảnh */
+    text-transform: capitalize;
+}
+
+/* Tùy biến riêng cho nút "Xem thêm" nằm trong ô thực đơn */
+.cart-content .btn {
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 100vw; /* Bo tròn hẳn hai đầu nút nhìn sẽ tinh tế hơn */
+    background: var(--gold-finger);
+    color: var(--lead); /* Đổi chữ trên nút thành màu đen xám hệ thống để dễ đọc */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 6px;
+}
+
+/* Hiệu ứng Hover riêng cho nút Xem thêm */
+.cart-content .btn:hover {
+    background: var(--pure-white);
+    color: var(--lead);
+}
+
+/*SECTION 2*/
+h5{
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    color: var(--gold-finger);
+    text-transform: uppercase;
+    
+}
+
+h2{
+    font-size: 3.7rem;
+    text-transform: capitalize;
+    color: var(--lead);
+}
+
+.margin-bottom{
+    margin-bottom: 2rem;
+}
+
+.order-card:hover{
+    transform: translateY(-5px);
+}
+.order-card{
+    flex: 1;
+    flex-basis: 300px;
+    background: var(--pure-white);
+    border: .1rem solid var(--gold-finger);
+    padding: 1.5rem 1rem 2rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 
+     rgba(0, 0, 0, 0.05) 8px 8px 8px,
+     rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
+}
+.order-card img{
+    width: 15rem;
+    filter: drop-shadow(
+        rgba(0, 0, 0, 0.2) 0px 10px 10px
+    );
+}
+
+h4{
+    font-size: 1.8rem;
+    color: var(--lead);
+}
+
+.order-card .price{
+    font-size: 1.7rem;
+    color: var(--gold-finger);
+    padding: 1.3rem 0 2rem 0;
+}
+
+
+/*HEADER STYLES*/
+.navbar{
+    min-height: 14vh;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gold-finger);
+}
+
+.btn{
+    color: var(--pure-white);
+    display: inline-block;
+    padding: .9rem 2rem;
+    background: var(--gold-finger);
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover{
+    background: var(--lead);
+    
+}
+
+.cart-icon{
+    /*color: var(--lead);*/
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.cart-icon .cart-value{
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    font-size: .85rem;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    background: var(--gold-finger);
+    color: var(--lead);
+    text-align: center;
+    line-height: 20px;
+}
+
+.desktop-action .humberger{
+    display: none;
+    font-size: 1.5rem;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+/*SECTION STYLES*/
+.hero-section{
+    min-height: calc(100vh - 14vh);
+}
+
+.content, .image-container{
+    flex: 1;
+    flex-basis: 300px;
+}
+
+h1{
+    font-size: 5.6vw;
+    color: var(--lead);
+}
+
+h1 span{
+    color: var(--gold-finger);
+}
+
+p{
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+.paragraph{
+    margin-block: 2rem;
+    max-width: 550px; 
+}
+
+.social-icon{
+    background: var(--hint-yellow);
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: .3s ease-in-out;
+}
+
+.social-icon:hover{
+    background: var(--lead);
+    color: var(--pure-white);
+}
+/*FOOTER STYLES*/
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 780px){
+
+    /*HEADER STYLES*/
+    .navlist, .desktop-action .btn{
+        display: none;
+    }
+
+    .desktop-action .humberger{
+        display: block;
+    }
+
+    .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    top: 20%;
+    left: -100%;
+    transform: translateX(-50%);
+    width: 20rem;
+    padding: 2rem;
+    background: var(--pure-white);
+    border: .1rem solid var(--gold-finger);
+    border-radius: 2rem;
+    box-shadow: 
+    rbga(0, 0, 0, 0.05) 8px 8px 8px,
+    rbga(0, 0, 0, 0.05) 8px 8px 8px inset;
+    transition: all .5s ease-in-out;
+    }
+
+    .mobile-menu.active{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*SECTION STYLES*/
+    h1{
+        font-size: 3.6rem;
+    }
+
+    .content{
+        padding-top: 3rem;
+    }
+
+    .gap-2{
+        gap: 1.4rem;
+    }
+
+    .gap-4{
+        gap: 4rem;
+    }
+}
