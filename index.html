@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kandy shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+    
+
+
 </head>
 
 <body>
@@ -144,8 +149,9 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </section>
+
         <section>
             <div class="wrapper p-top">
                 <div class="text-center margin-bottom">
@@ -153,7 +159,7 @@
                     <h2>Thực đơn nổi bật</h2>
                 </div>
                 <div class="card-list text-center flex mt-4 gap-2">
-                    <div class="order-card">
+                    <div class="order-card ">
                         <div class="card-image">
                             <img src="./assets/thesis/burger1.png" alt="burger">
                         </div>
@@ -188,11 +194,98 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <div class="wrapper p-top flex gap-3">
+                <div class="image-container">
+                    <img src="./assets/thesis/background1.jpg" alt="background 1">
+                </div>
+
+                <div class="content">
+                    <h2>Đánh giá sản phẩm</h2>
+                    <div class="review-container">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper mt-4">
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="./assets/thesis/profile1.jpeg" alt="Profile 1">
+                                        </div>
+                                        <div class="profile-name">
+                                            <h3>Nguyễn Văn A</h3>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="paragraph">Foodie là tuyệt nhất. Bên cạnh nhiều món ăn ngon 
+                                        thì dịch vụ ở đây cũng rất tốt, đặc biệt là giao hàng 
+                                        cực kỳ nhanh. Tôi rất tiến cử Foodie cho bạn.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="./assets/thesis/profile2.jpeg" alt="Profile 2">
+                                        </div>
+                                        <div class="profile-name">
+                                            <h3>Trần Thị B</h3>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="paragraph">Đồ ăn rất ngon, phục vụ tận tâm giá cả thì hợp lí. 
+                                        Tôi recommend nhất là món gà rán siêu ngon.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="./assets/thesis/profile3.jpeg" alt="Profile 3">
+                                        </div>
+                                        <div class="profile-name">
+                                            <h3> Lê Thị C</h3>
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="paragraph">Đồ ăn cực kỳ ngon và rất là tuyệt.</p>
+                                </div>
+                            </div>
+                            <div class="flex between">
+                                <a href="#" class="arrow" id="prev">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </a>
+                                <a href="#" class="arrow" id="next">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!--FOOTER PART-->
     <footer>
 
     </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+
 </body>
 
 </html>
