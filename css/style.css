@@ -66,6 +66,10 @@ img{
     margin-top: 4rem;
 }
 
+.mt-3{
+    margin-top: 3rem;
+}
+
 .mt-half{
     margin-top: .5rem;
 }
@@ -78,12 +82,13 @@ img{
     padding-top: 10rem;
 }
 
+
 .text-center{
     text-align: center;
 }
 
 /*SECTION 1 */
-.cart-item.item-1{
+.card-item.item-1{
     background: url('../assets/thesis/burger.jpg') 0% 0% / cover;
 }
 
@@ -95,7 +100,7 @@ img{
 }
 
 
-.cart-item {
+.card-item {
     position: relative;
     height: 300px; /* Khóa chiều cao cố định cho card cân đối giống mẫu */
     border-radius: 2rem; /* Đồng bộ độ bo góc 2rem giống .order-card của bạn */
@@ -105,35 +110,35 @@ img{
 }
 
 /* Hiệu ứng nhấc nhẹ card lên khi di chuột vào */
-.cart-item:hover {
+.card-item:hover {
     transform: translateY(-5px);
 }
 
 /* Sửa lại thuộc tính ảnh nền: Chèn thêm lớp phủ linear-gradient làm tối ảnh 
    để chữ trắng Hamburger hiển thị rõ ràng, không bị chói mắt */
-.cart-item.item-1 {
+.card-item.item-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6)), 
-                url('../assets/thesis/burger.jpg') no-repeat center center / cover;
+                url('../assets/thesis/burgergayo.jpg') no-repeat center center / cover;
 }
 
-.cart-item.item-2 {
+.card-item.item-2 {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6)), 
                 url('../assets/thesis/Fried&Roasted.jpg') no-repeat center center / cover;
 }
 
-.cart-item.item-3 {
+.card-item.item-3 {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6)), 
                 url('../assets/thesis/salad.jpg') no-repeat center center / cover;
 }
 
-.cart-item.item-4 {
+.card-item.item-4 {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6)), 
                 url('../assets/thesis/pepsi.jpg') no-repeat center center / cover;
 }
 
 
 /* Xử lý vùng chứa chữ và nút căn đều vào chính giữa ô */
-.cart-content {
+.card-content {
     width: 100%;
     height: 100%;
     padding: 2rem;
@@ -144,7 +149,7 @@ img{
 }
 
 /* Định dạng lại chữ tiêu đề trong ô thực đơn */
-.cart-content h2 {
+.card-content h2 {
     color: var(--pure-white) !important; /* Ép chữ chuyển sang màu trắng */
     font-size: 2.2rem; /* Hạ kích thước từ 3.7rem xuống 2.2rem để không bị tràn viền */
     font-weight: 700;
@@ -154,7 +159,7 @@ img{
 }
 
 /* Tùy biến riêng cho nút "Xem thêm" nằm trong ô thực đơn */
-.cart-content .btn {
+.card-content .btn {
     padding: 0.7rem 1.8rem;
     font-size: 1rem;
     font-weight: 600;
@@ -165,7 +170,7 @@ img{
 }
 
 /* Hiệu ứng Hover riêng cho nút Xem thêm */
-.cart-content .btn:hover {
+.card-content .btn:hover {
     background: var(--pure-white);
     color: var(--lead);
 }
@@ -221,6 +226,48 @@ h4{
     padding: 1.3rem 0 2rem 0;
 }
 
+/*Giỏ hàng*/
+
+.cart-table{
+    background: var(--hint-yellow);
+    position:fixed;
+    inset: 0 0 0 auto;
+    width: 25rem;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-list{
+    flex: 1;
+    width: 100%;
+}
+
+.total-container{
+    width: 100%;
+    background: var(--gold-finger);
+    text-align: center;
+    margin-block: 1rem;
+    padding-block: 1rem;
+}
+
+.total-container h4{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.btn-container .btn{
+    background: var(--gold-finger);
+    transition: .3s ease-in-out;
+}
+
+.btn-container .btn:hover{
+    background: var(--lead);
+    color: var(--pure-white);
+}
 
 /*SECTION 3*/
 
@@ -279,7 +326,10 @@ h4{
 
 .btn{
     color: var(--pure-white);
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: .9rem 2rem;
     background: var(--gold-finger);
     border-radius: 1rem;
@@ -290,16 +340,15 @@ h4{
 
 .btn:hover{
     background: var(--lead);
-    
 }
 
-.cart-icon{
+.card-icon{
     /*color: var(--lead);*/
     font-size: 1.3rem;
     position: relative;
 }
 
-.cart-icon .cart-value{
+.card-icon .card-value{
     position: absolute;
     top: 50%;
     right: -10px;
@@ -397,10 +446,188 @@ p{
     font-size: 1.1rem;
 }
 
-/*MEDIA QUERIES*/
-@media screen and (max-width: 780px){
+.footer-wrapper .list{
+    display: flex;
+    list-style: none;
+}
 
-    /*HEADER STYLES*/
+
+/* san-pham.html*/
+.p-top-5{
+    padding-top: 4rem;
+}
+
+.filter-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.product-items h2{
+    font-size: 2.5rem;
+    color: var(--lead);
+}
+
+.product-items,
+.category-title {
+    scroll-margin-top: 7rem;
+}
+
+ .product-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+/* .category-grid{
+    border: solid var(--gold-finger);
+} */
+
+.filter-container {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    background: var(--eye-ball);
+}
+
+.filter-btn {
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid var(--gold-finger);
+    background: transparent;
+    color: var(--lead);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-btn:hover {
+    background: var(--gold-finger);
+    color: var(--pure-white);
+}
+
+/* .filter-btn.active {
+    background: var(--gold-finger);
+    color: var(--lead);
+    font-weight: 700;
+} */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.product-item {
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*chi-tiet.html*/
+.product-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 14vh - 8rem);
+    padding-block: 4rem;
+}
+
+.product-detail-card {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1100px;
+    background: var(--pure-white);
+    border: .1rem solid rgba(242, 189, 18, 0.25);
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 20px 40px;
+}
+
+.detail-image {
+    width: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.detail-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.detail-content h2 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.detail-content .price {
+    font-size: 2.4rem;
+    color: var(--gold-finger);
+    font-weight: 700;
+}
+
+.detail-content .description {
+    color: #4b4b4b;
+    line-height: 1.8;
+    font-size: 1.15rem;
+}
+
+.detail-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.detail-actions .btn,
+.detail-actions button.btn {
+    padding: 1rem 2rem;
+    min-width: 180px;
+    
+
+}
+
+.detail-actions button.btn {
+    border: none;
+    cursor: pointer;
+}
+
+.detail-actions button.btn:hover {
+    background: rgba(242, 189, 18, 0.9);
+
+}
+
+.detail-actions button.btn{
+    background: var(--gold-finger);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: .3s ease-in-out;
+}
+
+.detail-actions button.btn:hover{
+    background: var(--lead);
+    
+}
+
+/* MEDIA QUERIES*/
+/*@media screen and (max-width: 780px){
+
+    HEADER STYLES*/
     /* .navlist, .desktop-action .btn{
         display: none;
     }
@@ -450,5 +677,5 @@ p{
 
     .gap-4{
         gap: 4rem;
-    } */
-}
+    }
+}*/

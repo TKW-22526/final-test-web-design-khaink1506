@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kandy shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!--HEADER PART-->
+    <header>
+        <nav class="navbar flex between wrapper">
+            <a href="#" class="logo">Kandy.</a>
+
+            <!--DESKTOP MENU-->
+            <ul class="navlist flex gap-3">
+                <li>
+                    <a href="../index.html">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="san-pham.html">Sản phẩm</a>
+                </li>
+                <li>
+                    <a href="gioi-thieu.html">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="lien-he.html">Liên hệ</a>
+                </li>
+            </ul>
+            <div class="desktop-action flex gap-2">
+                <a href="#" class="card-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="card-value">0</span>
+                </a>
+
+                <a href="#" class="btn">
+                    ĐĂNG NHẬP
+                    &nbsp;
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+                <a href="#" class="humberger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrapper p-top-4">
+                <div class="text-center">
+                    <h2>Thực đơn nổi bật</h2>
+                </div>
+                <div class="filter-container gap-2">
+                    <!-- <a href="#hamburger" class="filter-btn" data-filter="all">Tất cả</a> -->
+                    <a href="#hamburger" class="filter-btn" data-filter="hamburger">Hamburger</a>
+                    <a href="#chiennuong" class="filter-btn" data-filter="chiennuong">Chiên & Nướng</a>
+                    <a href="#snack" class="filter-btn" data-filter="snack">Snack</a>
+                    <a href="#nuoc" class="filter-btn" data-filter="nuoc">Nước</a>
+                </div>
+
+                <!-- PRODUCT ITEMS -->
+                <div class="product-grid mt-4" id="productsGrid">
+                    <div class="product-items" id="hamburger">
+                        <div class="category-title">
+                            <h2>Hamburger</h2>
+                        </div>
+                        <div class="category-grid mt-half"></div>
+                    </div>
+                    <div class="product-items" id="chiennuong">
+                        <div class="category-title">
+                            <h2>Chiên & Nướng</h2>
+                        </div>
+                        <div class="category-grid mt-half"></div>
+                    </div>
+                    <div class="product-items" id="snack">
+                        <div class="category-title">
+                            <h2>Snack</h2>
+                        </div>
+                        <div class="category-grid mt-half"></div>
+                    </div>
+                    <div class="product-items" id="nuoc">
+                        <div class="category-title">
+                            <h2>Nước</h2>
+                        </div>
+                        <div class="category-grid mt-half"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="flex wrapper">
+                <div class="footer-wrapper">
+                    <a href="#" class="logo">Kandy.</a>
+                    <p class="mt-one-half">
+                        Thực đơn Kandy đa dạng và phong phú <br>
+                        có rất nhiều sự lựa chọn cho bạn, gia đình và bạn bè
+                    </p>
+                    <div class="flex gap-2 mt-one-half">
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="footer-wrapper">
+                    <li>
+                        <h4>NGƯỜI LÀM WEB</h4>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Kim Ngọc Khải</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Lớp: DA24TTA</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">MSSV: 110124080</a>
+                    </li>
+                </ul>
+                <ul class="footer-wrapper">
+                    <li>
+                        <h4>THÔNG TIN</h4>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">SĐT: 0866379423</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Email: knkhai2006@gmail.com</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Địa chỉ: Vĩnh Long</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
