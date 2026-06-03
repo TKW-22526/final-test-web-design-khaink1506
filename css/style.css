@@ -240,9 +240,16 @@ h4{
     align-items: center;
 }
 
+.cart-table > h4 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
 .cart-list{
     flex: 1;
     width: 100%;
+    margin-top: 1.5rem;
 }
 
 .total-container{
@@ -269,6 +276,60 @@ h4{
     color: var(--pure-white);
 }
 
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .7rem 1rem;
+}
+
+.item .item-image img{
+    width: 5rem;
+    border-radius: 12px;
+}
+
+.item-details{
+    flex: 1;
+}
+
+.item-details h4{
+    font-size: 1.3rem;
+    color: var(--lead);
+    margin: 0;
+}
+
+.item .item-total{
+    font-weight: 400;
+    margin-top: .3rem;
+}
+
+.item-counter{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.count-btn{
+    background: var(--lead);
+    color: var(--pure-white);
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.count-value{
+    width: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--lead);
+}
 /*SECTION 3*/
 
 
@@ -623,6 +684,8 @@ p{
     background: var(--lead);
     
 }
+
+
 
 /* MEDIA QUERIES*/
 /*@media screen and (max-width: 780px){
