@@ -230,14 +230,15 @@ h4{
 
 .cart-table{
     background: var(--hint-yellow);
-    position:fixed;
+    position: fixed;
     inset: 0 0 0 auto;
     width: 25rem;
     padding-block: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    z-index: 30;
 }
 
 .cart-table > h4 {
@@ -250,6 +251,7 @@ h4{
     flex: 1;
     width: 100%;
     margin-top: 1.5rem;
+    overflow-y: auto;
 }
 
 .total-container{
@@ -258,6 +260,13 @@ h4{
     text-align: center;
     margin-block: 1rem;
     padding-block: 1rem;
+}
+
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .total-container h4{
@@ -330,6 +339,11 @@ h4{
     font-weight: 600;
     color: var(--lead);
 }
+
+/*Giỏ hàng bên sản phẩm*/
+.filter-container{
+    margin-right: 2rem;
+} 
 /*SECTION 3*/
 
 
@@ -551,6 +565,8 @@ p{
     padding: 1rem 0;
     margin-top: 2rem;
     background: var(--eye-ball);
+    max-width: calc(100% - 28rem);
+    margin-inline: auto;
 }
 
 .filter-btn {
