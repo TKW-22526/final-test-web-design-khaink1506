@@ -335,45 +335,46 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /*MODAL ĐĂNG NHẬP*/
-const loginModal = document.getElementById("loginModal");
-const loginBtn = document.querySelector(".btn-login-toggle");
-const closeSpan = document.querySelector(".close-modal");
+document.addEventListener("DOMContentLoaded", () => {
+    const loginModal = document.getElementById("loginModal");
+    const loginBtn = document.querySelector(".btn-login-toggle");
+    const closeSpan = document.querySelector(".close-modal");
 
-if (loginBtn && loginModal) {
-    loginBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        loginModal.style.display = "flex";
+    if (loginBtn && loginModal) {
+        loginBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            loginModal.style.display = "flex";
+        });
+    }
+
+    if (closeSpan) {
+        closeSpan.addEventListener('click', function () {
+            loginModal.style.display = "none";
+        });
+    }
+
+    window.addEventListener('click', function (e) {
+        if (e.target === loginModal) {
+            loginModal.style.display = "none";
+        }
     });
-}
 
-if (closeSpan) {
-    closeSpan.addEventListener('click', function () {
-        loginModal.style.display = "none";
-    });
-}
-
-window.addEventListener('click', function (e) {
-    if (e.target === loginModal) {
-        loginModal.style.display = "none";
+    const loginForm = document.querySelector(".modal-form");
+    if (loginForm) {
+        loginForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert("Đăng nhập thành công vào hệ thống Kandy Food!");
+            loginModal.style.display = "none";
+        });
     }
 });
 
-const loginForm = document.querySelector(".modal-form");
-if (loginForm) {
-    loginForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        alert("Đăng nhập thành công vào hệ thống Kandy Food!");
-        loginModal.style.display = "none";
-    });
-}
-
-// Hàm đóng Modal
-function closeAddModal() {
+/*function closeAddModal() {
     const modal = document.getElementById("modal");
     if (modal) {
         modal.classList.add("hidden");
     }
-}
+}*/
 
 /*CHỨC NĂNG THÊM SẢN PHẨM*/
 function handleAddProduct() {
