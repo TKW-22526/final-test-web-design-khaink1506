@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kandy shop</title>
+    <title>Kandy Food</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +16,7 @@
     <!--HEADER PART-->
     <header>
         <nav class="navbar flex between wrapper">
-            <a href="#" class="logo">Kandy.</a>
+            <a href="../index.html" class="logo">Kandy.</a>
 
             <!--DESKTOP MENU-->
             <ul class="navlist flex gap-3">
@@ -39,7 +39,7 @@
                     <span class="card-value">0</span>
                 </a>
 
-                <a href="#" class="btn">
+                <a href="#" class="btn btn-login-toggle">
                     ĐĂNG NHẬP
                     &nbsp;
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
@@ -64,7 +64,7 @@
                     <a href="#nuoc" class="filter-btn" data-filter="nuoc">Nước</a>
                 </div>
 
-                <!-- PRODUCT ITEMS -->
+                <!-- Danh sách sản phẩm -->
                 <div class="product-grid mt-4" id="productsGrid">
                     <div class="product-items" id="hamburger">
                         <div class="category-title">
@@ -93,10 +93,10 @@
                 </div>
 
                 <!-- Giỏ hàng -->
-                 <div class="cart-table">
+                <div class="cart-table">
                     <h4>Giỏ hàng</h4>
                     <div class="cart-list">
-                         <!-- sản phẩm thêm vào giỏ hàng sẽ được làm bên js -->
+                        <!-- sản phẩm thêm vào giỏ hàng sẽ được làm bên js -->
                     </div>
 
                     <div class="total-container">
@@ -108,9 +108,36 @@
                         <a href="#" class="btn cart-pay">Thanh toán</a>
                         <a href="#" class="btn cart-close">Đóng</a>
                     </div>
-                 </div>
+                </div>
             </div>
 
+
+        <div class="modal hidden" id="modal">
+            <div class="modal-content">
+                <h2>Thêm sản phẩm</h2>
+        
+                <input type="text" id="name" placeholder="Tên sản phẩm">
+                <input type="number" id="price" placeholder="Giá">
+                <input type="text" id="img" placeholder="Link ảnh">
+        
+                <select id="category">
+                    <option value="hamburger">Hamburger</option>
+                    <option value="chiennuong">Chiên/Nướng</option>
+                    <option value="snack">Snack</option>
+                    <option value="nuoc">Nước</option>
+                </select>
+        
+                <textarea id="description" placeholder="Mô tả"></textarea>
+        
+                <button type="button" onclick="handleAddProduct()">Lưu</button>
+                <button type="button" onclick="closeAddModal()">Hủy</button>
+            </div>
+        </div>
+
+        <div class="action-btn mt-3 gap-2">
+            <button id="btn" class="btn border-none">Thêm sản phẩm</button>
+            <button id="btnDeleteToggle" class="btn border-none">Xóa sản phẩm</button>
+        </div>
         </section>
     </main>
 

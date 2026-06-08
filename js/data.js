@@ -1,4 +1,4 @@
-const product = [
+let product = [
     {
         id: 1,
         name: "Hambuger Gà Yo",
@@ -114,5 +114,13 @@ const product = [
         img: "../assets/thesis/pepsi.jpg",
         price: 20000,
         description: "Gồm 1 lon Pepsi mát lạnh, sảng khoái."
+    },
+
+    /*Dữ liệu để thêm sản phẩm*/
+    {
+        name: "Combo Sang Chảnh",
+        category: "hamburger",
+        img: "../assets/thesis/combo1.jpg",
+        description: "2 LimePepper COB+ 1 Fried Chicken + 1 French Fries R + 2 Pepsi Zero (M).",
     }
 ]

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kandy shop</title>
+    <title>Kandy Food</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,9 +19,8 @@
     <!--HEADER PART-->
     <header>
         <nav class="navbar flex between wrapper">
-            <a href="#" class="logo">Kandy.</a>
+            <a href="index.html" class="logo">Kandy.</a>
 
-            <!--DESKTOP MENU-->
             <ul class="navlist flex gap-3">
                 <li>
                     <a href="index.html">Trang chủ</a>
@@ -42,7 +41,7 @@
                     <span class="card-value">0</span>
                 </a>
 
-                <a href="#" class="btn">
+                <a href="#" class="btn btn-login-toggle">
                     ĐĂNG NHẬP
                     &nbsp;
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
@@ -96,7 +95,7 @@
                 <div class="card-list flex mt-4 gap-2">
                     <div class="col-3">
                         <div class="card-item item-1 flex center column">
-                            <div class="card-content">
+                            <div class="card-content">  
                                 <h2>Hamburger</h2>
                                 <a href="./html/san-pham.html#hamburger" class="btn">Xem thêm</a>
                             </div>
@@ -162,7 +161,7 @@
                         </div>
                         <h4>Phô mai viên</h4>
                         <h4 class="price">53.000đ</h4>
-                        <a href="#" class="btn">Xem chi tiết</a>
+                        <a href="./html/san-pham.html#snack" class="btn">Xem chi tiết</a>
                     </div>
                     <div class="order-card">
                         <div class="card-image">
@@ -170,7 +169,7 @@
                         </div>
                         <h4>Cơm gà popcorn</h4>
                         <h4 class="price">46.000đ</h4>
-                        <a href="#" class="btn">Xem chi tiết</a>
+                        <a href="./html/san-pham.html#snack" class="btn">Xem chi tiết</a>
                     </div>
                     <div class="order-card">
                         <div class="card-image">
@@ -178,7 +177,7 @@
                         </div>
                         <h4>Gà Phi-lê quay</h4>
                         <h4 class="price">43.000đ</h4>
-                        <a href="#" class="btn">Xem chi tiết</a>
+                        <a href="./html/san-pham.html#chiennuong" class="btn">Xem chi tiết</a>
                     </div>
                     <div class="order-card">
                         <div class="card-image">
@@ -186,7 +185,7 @@
                         </div>
                         <h4>Humberger gà</h4>
                         <h4 class="price">30.000đ</h4>
-                        <a href="#" class="btn">Xem chi tiết</a>
+                        <a href="./html/san-pham.html#hamburger" class="btn">Xem chi tiết</a>
                     </div>
                 </div>
                 <div class="text-center mt-4">
@@ -278,7 +277,25 @@
             </div>
         </section>
 
-        
+        <div id="loginModal" class="login-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header">
+                    <h2>ĐĂNG NHẬP</h2>
+                </div>
+                <form class="modal-form">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Nhập email của bạn..." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu</label>
+                        <input type="password" placeholder="Nhập mật khẩu..." required>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">ĐĂNG NHẬP</button>
+                </form>
+            </div>
+</div>
     </main>
     <!--FOOTER PART-->
     <footer>
