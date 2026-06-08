@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <img src="${item.img || '../assets/thesis/banh-noi-bac1.png'}" alt="${item.name}">
             </div>
             <h4 class="mt-one-half">${item.name}</h4>
-            <h4 class="price">${formatPrice(item.price)}đ</h4>
+            <h4 class="price">${formatPrice(item.price || 0)}đ</h4>
             <a href="chi-tiet.html?id=${item.id}" class="btn btn-buy-or-delete" data-id="${item.id}">Mua</a>
         `;
         return card;
