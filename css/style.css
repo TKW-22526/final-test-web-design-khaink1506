@@ -629,7 +629,7 @@ h4 {
 }
 
 
-.modal-content {
+ .modal-content {
     width: 380px;
     max-width: 90%;
     background: var(--pure-white);
@@ -641,7 +641,7 @@ h4 {
     box-shadow: rgba(0, 0, 0, 0.15) 0 20px 40px;
     border: 2px solid var(--gold-finger);
     animation: pop 0.25s ease-in-out;
-}
+} 
 
 
 .modal-content h2 {

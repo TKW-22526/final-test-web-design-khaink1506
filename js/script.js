@@ -369,14 +369,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-/*function closeAddModal() {
+/*CHỨC NĂNG THÊM SẢN PHẨM*/
+function closeAddModal() {
     const modal = document.getElementById("modal");
     if (modal) {
         modal.classList.add("hidden");
     }
-}*/
+}
 
-/*CHỨC NĂNG THÊM SẢN PHẨM*/
 function handleAddProduct() {
     const nameInput = document.getElementById("name");
     const priceInput = document.getElementById("price");
