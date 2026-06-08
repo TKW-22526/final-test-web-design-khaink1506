@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // format tiền theo việt Nam  
     function formatPrice(value) {
+        if (typeof value !== "number"){
+            return "0";
+        }
         return value.toLocaleString('vi-VN');
     }
 

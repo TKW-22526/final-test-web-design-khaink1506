@@ -121,6 +121,7 @@ let product = [
         name: "Combo Sang Chảnh",
         category: "hamburger",
         img: "../assets/thesis/combo1.jpg",
+        price: 20000,
         description: "2 LimePepper COB+ 1 Fried Chicken + 1 French Fries R + 2 Pepsi Zero (M).",
     }
 ]
