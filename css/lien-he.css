@@ -1,4 +1,4 @@
-/* --- PHẦN LIÊN HỆ (lien-he.html) --- */
+
 .contact-container {
     width: min(100%, 760px);
     margin: 2.5rem auto 0;
@@ -33,7 +33,6 @@
     color: var(--lead);
 }
 
-/* Nút gửi form liên hệ */
 .btn-submit {
     background: var(--gold-finger);
     transition: .3s ease-in-out;

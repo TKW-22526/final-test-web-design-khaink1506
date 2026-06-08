@@ -1,8 +1,4 @@
-/* ==========================================================================
-   4. CSS DÀNH RIÊNG CHO TRANG SẢN PHẨM (products.css)
-   ========================================================================== */
 
-/* --- Bộ lọc phân loại --- */
 .filter-container {
     position: sticky;
     top: 0;
@@ -33,7 +29,7 @@
     color: var(--pure-white);
 }
 
-/* --- Cấu trúc Grid Sản phẩm --- */
+
 .product-items h2 {
     font-size: 2.5rem;
     color: var(--lead);
@@ -50,7 +46,7 @@
     gap: 2rem;
 }
 
-/* Ép layout dùng cơ chế Flexwrap chuẩn theo tỷ lệ col-3 của file gốc cũ */
+
 .category-grid {
     display: flex;
     align-items: center;
@@ -58,11 +54,11 @@
     gap: 2rem;
 }
 
-/* ĐỊNH DẠNG KHUNG BOX CHUẨN TUYỆT ĐỐI (Copy từ .order-card & .col-3 gốc) */
+
 .product-item {
     flex: 1;
     min-width: 250px;
-    max-width: 320px; /* Khống chế độ bự tối đa không cho hộp bị giãn bè ra */
+    max-width: 320px; 
     background: var(--pure-white);
     border: .1rem solid var(--gold-finger);
     padding: 1.5rem 1rem 2rem 1rem;
@@ -70,7 +66,7 @@
     text-align: center;
     box-shadow:
         rgba(0, 0, 0, 0.05) 8px 8px 8px,
-        rgba(0, 0, 0, 0.05) 8px 8px 8px inset; /* Đổ bóng kép đặc trưng */
+        rgba(0, 0, 0, 0.05) 8px 8px 8px inset; 
     transition: all 0.3s ease-in-out;
 }
 
@@ -78,7 +74,6 @@
     transform: translateY(-5px);
 }
 
-/* Định dạng hình ảnh sản phẩm bự 15rem + drop-shadow đổ bóng của file gốc */
 .product-item img {
     width: 15rem;
     max-width: 100%;
@@ -88,21 +83,19 @@
     filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 10px 10px);
 }
 
-/* Cỡ chữ tiêu đề h4 bự 1.8rem chuẩn */
 .product-item h4 {
     font-size: 1.8rem;
     color: var(--lead);
     font-weight: bold;
 }
 
-/* Cỡ chữ giá tiền và padding trống trên dưới */
+
 .product-item .price {
     font-size: 1.7rem;
     color: var(--gold-finger);
     padding: 1.3rem 0 2rem 0;
 }
 
-/* Nút bấm Mua kế thừa 100% từ class .btn hệ thống chính */
 .product-item .btn {
     color: var(--pure-white);
     display: inline-flex;
@@ -135,18 +128,14 @@
     background-color: var(--pure-white);
     padding: 2rem;
     border-radius: 1.5rem;
-    /* Bo góc tròn bự 1.5rem giống sản phẩm */
     width: 90%;
     max-width: 380px;
-    /* Độ bự chuẩn 380px */
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     border: 2px solid var(--gold-finger);
-    /* Viền vàng gold bọc ngoài */
     box-shadow: rgba(0, 0, 0, 0.15) 0 20px 40px;
-    /* Đổ bóng sâu cực đẹp */
 }
 
 .login-modal .modal-content-login h2 {
@@ -155,10 +144,9 @@
     text-align: center;
     margin-bottom: 0.5rem;
     text-shadow: none !important;
-    /* Xóa sạch bóng chữ đen */
 }
 
-/* Ô nhập dữ liệu mượt mà */
+
 .login-modal .modal-content-login input {
     width: 100%;
     padding: 0.8rem 1rem;
@@ -179,7 +167,7 @@
     margin-top: 10px;
 }
 
-/* NÚT BẤM ĐĂNG NHẬP PHẲNG MỊN - KHÔNG VIỀN ĐEN - GIỐNG TRANG SẢN PHẨM */
+
 .action-btn {
     display: inline-flex;
     justify-content: center;
@@ -192,7 +180,6 @@
     cursor: pointer;
     transition: .3s ease-in-out;
 
-    /* Màu nền vàng và bo góc hệ thống */
     background: var(--gold-finger);
     color: var(--pure-white);
     border-radius: 1rem;
@@ -203,7 +190,6 @@
     color: var(--pure-white);
 }
 
-/* --- Pop-up Modal Thêm sản phẩm (Admin) --- */
 .modal {
     position: fixed;
     inset: 0;
@@ -266,7 +252,7 @@
     transition: 0.3s ease;
 }
 
-/* btn lưu */
+
 .modal-content button:first-of-type {
     background: var(--gold-finger);
     color: var(--lead);
@@ -277,7 +263,6 @@
     color: var(--pure-white);
 }
 
-/* btn hủy */
 .modal-content button:last-of-type {
     background: transparent;
     border: 1px solid var(--lead);
@@ -289,7 +274,7 @@
     color: var(--pure-white);
 }
 
-/* --- Nút xóa sản phẩm --- */
+
 .delete-product-btn {
     display: none;
     position: absolute;

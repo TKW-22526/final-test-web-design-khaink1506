@@ -1,8 +1,4 @@
-/* ==========================================================================
-   5. CSS DÀNH RIÊNG CHO TRANG GIỚI THIỆU & LIÊN HỆ (about-contact.css)
-   ========================================================================== */
 
-/* --- PHẦN GIỚI THIỆU (gioi-thieu.html) --- */
 .box-wrapper {
     max-width: 900px;
     margin: 0 auto;
@@ -18,7 +14,7 @@ content p {
     margin-bottom: 1.5rem;
 }
 
-/* Khối các đặc trưng/ưu điểm (Features Grid) */
+
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
