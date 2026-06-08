@@ -13,9 +13,27 @@ let currentProducts = [];
 // Lấy dữ liệu sản sẩm
 if (localStorage.getItem('localProducts')) {
     currentProducts = JSON.parse(localStorage.getItem('localProducts'));
+    currentProducts = currentProducts.map(p => ({
+        id: p.id || "no-id",
+        name: p.name || "No name",
+        category: p.category || "other",
+        img: p.img || "../assets/default.png",
+        price: Number(p.price) || 0,
+        description: p.description || ""
+    }));
+
 } else if (typeof product !== 'undefined') {
-    currentProducts = product;
+   currentProducts = product.map(p => ({
+        id: p.id || "no-id",
+        name: p.name || "No name",
+        category: p.category || "other",
+        img: p.img || "../assets/default.png",
+        price: Number(p.price) || 0,
+        description: p.description || ""
+    }));
     localStorage.setItem('localProducts', JSON.stringify(product));
+}else{
+     currentProducts = [];
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -28,10 +46,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // format tiền theo việt Nam  
     function formatPrice(value) {
-        if (typeof value !== "number"){
+        if (isNaN(Number(value))){
             return "0";
         }
-        return value.toLocaleString('vi-VN');
+        return Number(value).toLocaleString('vi-VN');
     }
 
     // Đọc mảng sản phẩm đã lưu trong localStorage của giỏ hàng

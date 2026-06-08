@@ -118,6 +118,7 @@ let product = [
 
     /*Dữ liệu để thêm sản phẩm*/
     {
+        id: 14,
         name: "Combo Sang Chảnh",
         category: "hamburger",
         img: "../assets/thesis/combo1.jpg",
